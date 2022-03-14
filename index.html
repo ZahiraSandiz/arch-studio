@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles/styles-index.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,166 +42,181 @@
               />
             </svg>
             <div class="nav-home__links">
-              <a class="nav-home__portfolio nav-home__link" href=""
+              <a
+                class="nav-home__portfolio nav-home__link"
+                href="./portfolio.html"
                 >Portfolio</a
               >
-              <a class="nav-home__about-us nav-home__link" href="">About Us</a>
-              <a class="nav-home__contact nav-home__link" href="">Contact</a>
+              <a class="nav-home__about-us nav-home__link" href="./about.html"
+                >About Us</a
+              >
+              <a class="nav-home__contact nav-home__link" href="./contact.html"
+                >Contact</a
+              >
             </div>
             <div class="nav-home__dropdown">
               <div class="nav-home__dropdown-line"></div>
               <div class="nav-home__dropdown-line"></div>
               <div class="nav-home__dropdown-line"></div>
             </div>
+            <button class="nav-home__open-dropdown">
+              <img src="./assets/icons/icon-close.svg" alt="close" />
+            </button>
+            <div class="nav-home__dropdown-links">
+              <a class="nav-home__link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-home__link" href="./about.html">About Us</a>
+              <a class="nav-home__link" href="./contact.html">Contact</a>
+            </div>
           </nav>
         </header>
 
-        <section class="carousel-container">
-          <section class="carousel carousel-one">
-            <img
-              class="carousel__img"
-              src="./assets/home/desktop/image-hero-paramour.jpg"
-              alt=""
-            />
-            <div class="carousel-content">
-              <h1 class="carousel__title">Project Paramour</h1>
-              <p class="carousel__text">
-                Project made for an art museum near Southwest London. Project
-                Paramour is a statement of bold, modern architecture.
-              </p>
-              <a class="button carousel__button" href=""
-                >See Our Portfolio<svg
-                  class="button__svg-icon-arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="20"
-                >
-                  <g
-                    fill="none"
-                    fill-rule="evenodd"
-                    stroke="#1B1D23"
-                    stroke-width="2"
+        <section class="wrap-carousel-container">
+          <div class="carousel-container">
+            <section class="carousel carousel-one">
+              <img
+                class="carousel__img"
+                src="./assets/home/desktop/image-hero-paramour.jpg"
+                alt=""
+              />
+              <div class="carousel-content">
+                <h1 class="carousel__title">Project Paramour</h1>
+                <p class="carousel__text">
+                  Project made for an art museum near Southwest London. Project
+                  Paramour is a statement of bold, modern architecture.
+                </p>
+                <a class="button carousel__button" href="./portfolio.html"
+                  >See Our Portfolio<svg
+                    class="button__svg-icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
                   >
-                    <path
-                      class="button__path-icon-arrow"
-                      d="M15 1l9 9-9 9M0 10h24"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </section>
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path
+                        class="button__path-icon-arrow"
+                        d="M15 1l9 9-9 9M0 10h24"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </section>
 
-          <section class="carousel carousel-two">
-            <img
-              class="carousel__img"
-              src="./assets/home/desktop/image-hero-seraph.jpg"
-              alt=""
-            />
-            <div class="carousel-content">
-              <h1 class="carousel__title">Seraph Station</h1>
-              <p class="carousel__text">
-                The Seraph Station project challenged us to design a unique
-                station that would transport people through time. The result is
-                a fresh and futuristic model inspired by space stations.
-              </p>
-              <a class="button carousel__button" href=""
-                >See Our Portfolio
-                <svg
-                  class="button__svg-icon-arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="20"
-                >
-                  <g
-                    fill="none"
-                    fill-rule="evenodd"
-                    stroke="#1B1D23"
-                    stroke-width="2"
+            <section class="carousel carousel-two">
+              <img
+                class="carousel__img"
+                src="./assets/home/desktop/image-hero-seraph.jpg"
+                alt=""
+              />
+              <div class="carousel-content">
+                <h1 class="carousel__title">Seraph Station</h1>
+                <p class="carousel__text">
+                  The Seraph Station project challenged us to design a unique
+                  station that would transport people through time. The result
+                  is a fresh and futuristic model inspired by space stations.
+                </p>
+                <a class="button carousel__button" href="./portfolio.html"
+                  >See Our Portfolio
+                  <svg
+                    class="button__svg-icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
                   >
-                    <path
-                      class="button__path-icon-arrow"
-                      d="M15 1l9 9-9 9M0 10h24"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </section>
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path
+                        class="button__path-icon-arrow"
+                        d="M15 1l9 9-9 9M0 10h24"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </section>
 
-          <section class="carousel carousel-three">
-            <img
-              class="carousel__img"
-              src="./assets/home/desktop/image-hero-federal.jpg"
-              alt=""
-            />
-            <div class="carousel-content">
-              <h1 class="carousel__title">Federal II Tower</h1>
-              <p class="carousel__text">
-                A sequel theme project for a tower originally built in the
-                1800s. We achieved this with a striking look of brutal
-                minimalism with modern touches..
-              </p>
-              <a class="button carousel__button" href=""
-                >See Our Portfolio<svg
-                  class="button__svg-icon-arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="20"
-                >
-                  <g
-                    fill="none"
-                    fill-rule="evenodd"
-                    stroke="#1B1D23"
-                    stroke-width="2"
+            <section class="carousel carousel-three">
+              <img
+                class="carousel__img"
+                src="./assets/home/desktop/image-hero-federal.jpg"
+                alt=""
+              />
+              <div class="carousel-content">
+                <h1 class="carousel__title">Federal II Tower</h1>
+                <p class="carousel__text">
+                  A sequel theme project for a tower originally built in the
+                  1800s. We achieved this with a striking look of brutal
+                  minimalism with modern touches..
+                </p>
+                <a class="button carousel__button" href="./portfolio.html"
+                  >See Our Portfolio<svg
+                    class="button__svg-icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
                   >
-                    <path
-                      class="button__path-icon-arrow"
-                      d="M15 1l9 9-9 9M0 10h24"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </section>
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path
+                        class="button__path-icon-arrow"
+                        d="M15 1l9 9-9 9M0 10h24"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </section>
 
-          <section class="carousel carousel-four">
-            <img
-              class="carousel__img"
-              src="./assets/home/desktop/image-hero-trinity.jpg"
-              alt=""
-            />
-            <div class="carousel-content">
-              <h1 class="carousel__title">Trinity Bank Tower</h1>
-              <p class="carousel__text">
-                Trinity Bank challenged us to make a concept for a 84 story
-                building located in the middle of a city with a high earthquake
-                frequency. For this project we used curves to blend design and
-                stability to meet our objectives.
-              </p>
-              <a class="button carousel__button" href=""
-                >See Our Portfolio<svg
-                  class="button__svg-icon-arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="20"
-                >
-                  <g
-                    fill="none"
-                    fill-rule="evenodd"
-                    stroke="#1B1D23"
-                    stroke-width="2"
+            <section class="carousel carousel-four">
+              <img
+                class="carousel__img"
+                src="./assets/home/desktop/image-hero-trinity.jpg"
+                alt=""
+              />
+              <div class="carousel-content">
+                <h1 class="carousel__title">Trinity Bank Tower</h1>
+                <p class="carousel__text">
+                  Trinity Bank challenged us to make a concept for a 84 story
+                  building located in the middle of a city with a high
+                  earthquake frequency. For this project we used curves to blend
+                  design and stability to meet our objectives.
+                </p>
+                <a class="button carousel__button" href="./portfolio.html"
+                  >See Our Portfolio<svg
+                    class="button__svg-icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
                   >
-                    <path
-                      class="button__path-icon-arrow"
-                      d="M15 1l9 9-9 9M0 10h24"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </section>
-
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path
+                        class="button__path-icon-arrow"
+                        d="M15 1l9 9-9 9M0 10h24"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </section>
+          </div>
           <div class="carousel-control">
             <div class="carousel-control__one carousel-control--selected">
               01
@@ -249,7 +264,7 @@
         <section class="about-us">
           <div class="about-us__content">
             <h1 class="about-us__title">Small team, big ideas</h1>
-            <a class="button about-us__button" href=""
+            <a class="button about-us__button" href="./about.html"
               >About Us<svg
                 class="button__svg-icon-arrow"
                 xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +290,7 @@
         <section class="featured">
           <header class="featured-header">
             <h1 class="featured-header__title">Featured</h1>
-            <a class="button featured-header__button" href=""
+            <a class="button featured-header__button" href="./portfolio.html"
               >See All<svg
                 class="button__svg-icon-arrow"
                 xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +339,7 @@
           </div>
 
           <div class="container-featured__button-mobile">
-            <a class="button featured__button-mobile" href=""
+            <a class="button featured__button-mobile" href="./portfolio.html"
               >See All<svg
                 class="button__svg-icon-arrow"
                 xmlns="http://www.w3.org/2000/svg"
@@ -357,17 +372,23 @@
               />
             </div>
             <div class="nav-footer__container-links">
-              <a class="nav-footer__portfolio nav-footer__link" href=""
+              <a
+                class="nav-footer__portfolio nav-footer__link"
+                href="./portfolio.html"
                 >Portfolio</a
               >
-              <a class="nav-footer__about-us nav-footer__link" href=""
+              <a
+                class="nav-footer__about-us nav-footer__link"
+                href="./about.html"
                 >About Us</a
               >
-              <a class="nav-footer__contact nav-footer__link" href=""
+              <a
+                class="nav-footer__contact nav-footer__link"
+                href="./contact.html"
                 >Contact</a
               >
             </div>
-            <a class="button nav-footer__button" href=""
+            <a class="button nav-footer__button" href="./portfolio.html"
               >See Our Portfolio<svg
                 class="button__svg-icon-arrow"
                 xmlns="http://www.w3.org/2000/svg"
