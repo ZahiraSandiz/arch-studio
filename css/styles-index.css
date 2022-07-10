@@ -140,6 +140,14 @@ body {
   width: 100%;
 }
 
+.carousel-image-display-inline {
+  display: inline;
+}
+
+.carousel-image-display-none {
+  display: none;
+}
+
 .carousel-content {
   width: 49%;
   color: #ffffff;
@@ -204,6 +212,9 @@ body {
 .carousel-control__two,
 .carousel-control__three,
 .carousel-control__four {
+  font-family: "Spartan", sans-serif;
+  background-color: transparent;
+  border: none;
   color: #7d828f;
   cursor: pointer;
   width: 80px;

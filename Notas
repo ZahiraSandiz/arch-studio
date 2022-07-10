@@ -1,0 +1,21 @@
+CAROUSEL;
+
+// Poner un event listener por cada boton
+// Tener cada imagen(seccion) cargada en el html por cada botón
+// En cada una de esas funciones manejadoras de eventos:
+// al escuchar un click en este elemento: ocultar imagen 1, 2, 3, y darle un displey inline a la 4. (Así con cada una).
+
+//Segundo paso:
+
+// Armar una unica funcion manejadora que saque del evento cual fue la imagen que disparo el evento(event.target ) y para poder identificarla a esa imagen, va a tener que tener un id, entonces va a tener que tener event.target.id, voy a tener que pedirle al padre de esos elementos (buscar propiedad del padre que te da TODOS los hijos, creo que es 'parent.children')
+// con un for, iteramos todos los hijos, los recorremos, y preguntamos por cada uno: el id tuyo es igual al id de la imagen que disparó el evento?
+// si no tiene el id que busco le doy display none
+// si tiene el id que busco le dpy display inline.
+
+//A TENER EN CUENTA:
+
+// El elemento que dispara el evento NO ES el elemento con el que yo quiero trabajar (las imagenes), el evento lo va a disparar un botón.
+// Tenemos que tener una referencia al padre de las imagenes
+// Los botones me tienen que probeer la informacion del id de la imagen a la que correspondan y eso se hace atraves de un atributo (html)-> se suele usar data-elNombreQueYoQuiera = idDeLaImagen
+// en este caso => data-imagen = _____
+//Cuando levento el evento pongo event.target.data-image y me va a devolver el id de la imagen a la que corresponde y ahora sí, agarro el padre y recorro los hijos para saber cual de esas tiene el id.
