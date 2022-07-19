@@ -49,16 +49,14 @@ const validadorInputs = (evento, minimo, maximo) => {
   const cantidadCaracteres = input.value.length;
   let mensajeError = "";
 
-  console.log("Cantidad de caracteres: ", cantidadCaracteres);
-
   if (cantidadCaracteres >= maximo) {
-    mensajeError = `Ha superado la capacidad máxima de ${maximo} caracteres`;
+    mensajeError = "You have exceeded maximum number of characters";
     crearMensajeError(input, mensajeError);
   } else if (cantidadCaracteres < minimo && cantidadCaracteres > 0) {
-    mensajeError = `Se necesitan mínimo ${minimo} caracteres`;
+    mensajeError = `This field must be at least ${minimo} characters long`;
     crearMensajeError(input, mensajeError);
   } else if (cantidadCaracteres === 0) {
-    mensajeError = "No se puede dejar este campo en blanco";
+    mensajeError = "This field can't be empty";
     crearMensajeError(input, mensajeError);
   } else {
     borrarMensajeError(input);
@@ -84,11 +82,11 @@ inputEmail.addEventListener("keyup", (evento) => {
     if (elementoError === null) {
       evento.target.classList.add("connect-form__input--error");
       elementoError = document.createElement("span");
-      elementoError.innerText = "Email invalido";
+      elementoError.innerText = "Please use a valid email address";
       elementoError.classList.add("connect-form__input-text--error");
       elementoPadre.append(elementoError);
     } else {
-      elementoError.innerText = "Email invalido";
+      elementoError.innerText = "Please use a valid email address";
     }
   }
 });

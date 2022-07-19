@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles-about.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/styles-about.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/hero.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,11 +53,11 @@
                 >Contact</a
               >
             </div>
-            <div class="nav-home__dropdown">
+            <button class="nav-home__dropdown">
               <div class="nav-home__dropdown-line"></div>
               <div class="nav-home__dropdown-line"></div>
               <div class="nav-home__dropdown-line"></div>
-            </div>
+            </button>
             <button class="nav-home__open-dropdown">
               <img src="./assets/icons/icon-close.svg" alt="close" />
             </button>
@@ -68,7 +70,7 @@
         </header>
 
         <section class="hero">
-          <div class="hero__image"></div>
+          <div class="hero__image hero__image-about"></div>
           <div class="hero__content">
             <div class="hero__text-about">About</div>
             <div class="hero__texts">
@@ -436,5 +438,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/nav-dropdown.js"></script>
   </body>
 </html>
